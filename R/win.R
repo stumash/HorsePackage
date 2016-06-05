@@ -20,8 +20,8 @@ win <- function(race_df, pick, amount = 1){
   # 1.19 (roughly, only up to 13 horses), the prob he would win is .5 / 1.19.
   
   df$probToWin <- (1/df$plus1) / (sum(1/df$plus1))
-  #race_df$secondWithNyquist <- (1/race_df$Horse_Odds) / (sum(1/race_df$Horse_Odds) - 1 / race_df$Horse_Odds[13])
-  
+  df$secondWithNyquist <- (1/df$plus1) / (sum(1/df$plus1) - 1 / df$plus1[13])
+  df$secondWithLani <- (1/df$plus1) / (sum(1/df$plus1) - 1 / df$plus1[8])
   
   bet <- df[which(df$Horse_Names == pick),]
   

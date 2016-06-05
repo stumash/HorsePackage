@@ -25,8 +25,6 @@
 #' @export
 #' 
 
-
-
 trifecta <- function(race_df, picks) {
   df <- race_df
   df$plus1 <- df[,2] + 1
@@ -36,6 +34,5 @@ trifecta <- function(race_df, picks) {
   horse3 <- df[which(df[,1] == picks[3]), 5]
   
   trifectaFinal <- (horse1 * horse2 * horse3) / ((1 - horse1)*(1 - horse1 - horse2))
-  
   
 }
