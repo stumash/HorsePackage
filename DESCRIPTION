@@ -1,8 +1,8 @@
-Package: horses
+Package: HorsePackage
 Type: Package
 Title: Horse Racing Data and Payout Calculator
 Version: 0.1.0
-Author: Lloyd Shatkin
+Author: Willie Haynes, Stuart Mashaal, Lloyd Shatkin
 Maintainer: Lloyd Shatkin <lshatkin@umich.edu>
 Description: A function that analyzes past horce racing data, as well as 
       calculating potential payouts for horse races. 
