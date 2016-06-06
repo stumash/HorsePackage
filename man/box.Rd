@@ -2,7 +2,7 @@
 % Please edit documentation in R/box.R
 \name{box}
 \alias{box}
-\title{Calculate the odds of a box bet}
+\title{Calculate the odds of a box bet (predict top 2 or 3, in no order)}
 \usage{
 box(race_df, picks)
 }
@@ -16,6 +16,6 @@ picks in no particular order}
 our calculation of probability
 }
 \description{
-Calculate the odds of a box bet
+Calculate the odds of a box bet (predict top 2 or 3, in no order)
 }
 

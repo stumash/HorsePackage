@@ -1,6 +1,11 @@
 #' Generate psodds columns for finishing in 1st, 2nd and 3rd. Information about the math used can
 #' be found here http://math.stackexchange.com/questions/842604/given-every-horses-probability-of-winning-a-race-what-is-the-probability-that.
 #' If the page is gone, try googling 'trifecta bet probability math stackexchange'.
+#' All of our probability calculations are based on the horses' odds of coming in first. In basically
+#' every case, the sum over each horse's odds of winning does not equal 1, therefore this metric is
+#' not a true probability. We arrive at set of pseudo odds ('psodds') that more closely resembles a 
+#' probability by dividing each horse's race track odds (.33333333 if odds are 2:1, .25 if they are 3:1, etc),
+#' by the sum of all odds.
 #' @param race_df A data.frame of the format specified
 #' in the package-wide man page.
 #' @return the input data.frame with the added psodds columns.
@@ -16,7 +21,7 @@ generate_psodds <- function(race_df) {
 #' Generate a column of multipliers from the odds provided by the user in the format
 #' specified in the package-wide manfile
 add_multipliers <- function(race_df) {
-  x2y <- strsplit(race_df[,2], ":")
+  x2y <- strsplit(race_df[,'Horse_Odds'], ":")
   for (i in 1:length(x2y)) {
     race_df$Multiplier[i] <- (as.numeric(x2y[[i]])[1] / as.numeric(x2y[[i]])[2]) + 1
   }

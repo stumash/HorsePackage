@@ -2,20 +2,20 @@
 % Please edit documentation in R/show_bet.R
 \name{show_bet}
 \alias{show_bet}
-\title{Calculate the odds of a show bet}
+\title{Calculate the odds of a show bet (My pick wins 1st, 2nd, or 3rd)}
 \usage{
 show_bet(race_df, pick)
 }
 \arguments{
 \item{race_df, }{a data frame containing each horse's name and odds of winning 1st}
 
-\item{Pick}{for the show bet}
+\item{Pick}{for the show bet, must be one value}
 }
 \value{
 our calculation of probability
 }
 \description{
-Calculate the odds of a show bet
+Calculate the odds of a show bet (My pick wins 1st, 2nd, or 3rd)
 }
 \examples{
 show_bet(horse_info, "Nyquist")

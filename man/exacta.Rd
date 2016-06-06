@@ -2,12 +2,14 @@
 % Please edit documentation in R/exacta_bet.R
 \name{exacta}
 \alias{exacta}
-\title{Calculate the odds of an exacta bet}
+\title{Calculate the odds of an exacta bet, in which a better picks Horse A to come in first and Horse B
+to come in second. He only wins the bet if the horses finish in that exact order}
 \usage{
 exacta(race_df, picks)
 }
 \arguments{
-\item{race_df, }{a data frame containing each horse's name and odds of winning 1st}
+\item{race_df, }{a data frame that has been passed through generate_psodds, so it has columns
+for each horse's odds of winning 1st, 2nd, and 3rd}
 
 \item{picks}{character vector containing the better's picks for 1st, 2nd, 
 picks in that order}
@@ -16,7 +18,8 @@ picks in that order}
 our calculation of probability
 }
 \description{
-Calculate the odds of an exacta bet
+Calculate the odds of an exacta bet, in which a better picks Horse A to come in first and Horse B
+to come in second. He only wins the bet if the horses finish in that exact order
 }
 \examples{
 exacta(Kentucky_derby, c('Nyquist','Exaggerator'))
