@@ -2,7 +2,7 @@
 % Please edit documentation in R/show_bet.R
 \name{show_bet}
 \alias{show_bet}
-\title{Calculate the odds of a show bet}
+\title{Show each horse's odds of placig first}
 \usage{
 show_bet(race_df, pick)
 }
@@ -15,7 +15,7 @@ show_bet(race_df, pick)
 our calculation of probability
 }
 \description{
-Calculate the odds of a show bet
+Show each horse's odds of placig first
 }
 \examples{
 show_bet(horse_info, "Nyquist")

@@ -1,3 +1,4 @@
+#' Calculates the probability of an exacta bet being successful
 #' @param race_df, a data frame containing each horse's name and odds of winning 1st
 #' @param picks character vector containing the better's picks for 1st, 2nd, 
 #' picks in that order

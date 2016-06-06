@@ -6,6 +6,7 @@ Author: Willie Haynes, Stuart Mashaal, Lloyd Shatkin
 Maintainer: Lloyd Shatkin <lshatkin@umich.edu>
 Description: A function that analyzes past horce racing data, as well as 
       calculating potential payouts for horse races. 
+Imports: ggplot2
 License: GPL-3
 LazyData: TRUE
 RoxygenNote: 5.0.1

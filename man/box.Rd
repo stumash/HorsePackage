@@ -2,7 +2,7 @@
 % Please edit documentation in R/box.R
 \name{box}
 \alias{box}
-\title{Calculate the odds of a box bet}
+\title{Calculates the probability of a box bet being successful}
 \usage{
 box(race_df, picks)
 }
@@ -16,6 +16,11 @@ picks in no particular order}
 our calculation of probability
 }
 \description{
-Calculate the odds of a box bet
+Calculates the probability of a box bet being successful
+}
+\examples{
+box(Kentucky_derby, c('Nyquist','Exaggerator'))
+box(race, my_picks)
+box(race, c('Nyquist', 'Exagerator','Big Brown'))
 }
 

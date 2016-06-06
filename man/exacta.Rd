@@ -2,7 +2,7 @@
 % Please edit documentation in R/exacta_bet.R
 \name{exacta}
 \alias{exacta}
-\title{Calculate the odds of an exacta bet}
+\title{Calculates the probability of an exacta bet being successful}
 \usage{
 exacta(race_df, picks)
 }
@@ -16,7 +16,7 @@ picks in that order}
 our calculation of probability
 }
 \description{
-Calculate the odds of an exacta bet
+Calculates the probability of an exacta bet being successful
 }
 \examples{
 exacta(Kentucky_derby, c('Nyquist','Exaggerator'))

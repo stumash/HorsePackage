@@ -7,10 +7,6 @@
 #' exacta(Kentucky_derby, c('Nyquist','Exaggerator'))
 #' exacta(race, my_picks)
 #' @export
-#' 
-#' 
-
-
 plot_odds <- function(race_df, picks) {
   ## Ensure data frame is in right format; if not, run generate_psodds on it to correct
   if (length(names(race_df)) == 3) race_df <- generate_psodds(race_df)
