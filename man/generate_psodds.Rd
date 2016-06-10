@@ -2,9 +2,13 @@
 % Please edit documentation in R/generate_psodds.R
 \name{generate_psodds}
 \alias{generate_psodds}
-\title{Generate psodds columns for finishing in 1st, 2nd and 3rd. Information about the math used can
+\title{Generate psodds ('pdeudo odss') columns for finishing in 1st, 2nd and 3rd. Information about the math used can
 be found here http://math.stackexchange.com/questions/842604/given-every-horses-probability-of-winning-a-race-what-is-the-probability-that.
-If the page is gone, try googling 'trifecta bet probability math stackexchange'.}
+If the page is gone, try googling 'trifecta bet probability math stackexchange'.
+The odds provided by the track are not the true probability of each horse winning, and
+cannot be expected to sum to 1 as true mutually-exclusive, exhaustive probabilities would.  As such, the calculation of the psodds of each
+horse placing first is the fraction of the given odds divided by the sum of the given odds.  These '1st place psodds'
+are then used to produce the second and third place psodds according to the method described in the link provided.}
 \usage{
 generate_psodds(race_df)
 }
@@ -16,8 +20,12 @@ in the package-wide man page.}
 the input data.frame with the added psodds columns.
 }
 \description{
-Generate psodds columns for finishing in 1st, 2nd and 3rd. Information about the math used can
+Generate psodds ('pdeudo odss') columns for finishing in 1st, 2nd and 3rd. Information about the math used can
 be found here http://math.stackexchange.com/questions/842604/given-every-horses-probability-of-winning-a-race-what-is-the-probability-that.
 If the page is gone, try googling 'trifecta bet probability math stackexchange'.
+The odds provided by the track are not the true probability of each horse winning, and
+cannot be expected to sum to 1 as true mutually-exclusive, exhaustive probabilities would.  As such, the calculation of the psodds of each
+horse placing first is the fraction of the given odds divided by the sum of the given odds.  These '1st place psodds'
+are then used to produce the second and third place psodds according to the method described in the link provided.
 }
 

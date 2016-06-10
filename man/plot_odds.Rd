@@ -2,13 +2,13 @@
 % Please edit documentation in R/plot_odds.R
 \name{plot_odds}
 \alias{plot_odds}
-\title{Plot horse's odds of winning first, second, and third}
+\title{Plot horse's odds of winning first, second, and third, or showing}
 \usage{
 plot_odds(race_df, picks)
 }
 \arguments{
 \item{race_df, }{a data frame that has been passed through generate_psodds, so it has columns
-for each horse's odds of winning 1st, 2nd, and 3rd}
+for each horse's odds of winning 1st, 2nd, and 3rd, or showing}
 
 \item{picks, }{a character containing the horses whose odds of winning first, second, and third you want to see}
 }
@@ -16,7 +16,7 @@ for each horse's odds of winning 1st, 2nd, and 3rd}
 a ggplot for each horse
 }
 \description{
-Plot horse's odds of winning first, second, and third
+Plot horse's odds of winning first, second, and third, or showing
 }
 \examples{
 exacta(Kentucky_derby, c('Nyquist','Exaggerator'))

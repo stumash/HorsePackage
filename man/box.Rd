@@ -21,6 +21,5 @@ Calculates the probability of a box bet being successful
 \examples{
 box(Kentucky_derby, c('Nyquist','Exaggerator'))
 box(race, my_picks)
-box(race, c('Nyquist', 'Exagerator','Big Brown'))
 }
 

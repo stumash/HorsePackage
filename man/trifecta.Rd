@@ -20,7 +20,8 @@ the true probability of an individual horse winning in the win function.}
 trifecta(race_df, picks)
 }
 \arguments{
-\item{race_df, }{a data frame containing each horse's name and odds of winning 1st}
+\item{race_df, }{a data frame that has been passed through generate_psodds, so it has columns
+for each horse's odds of winning 1st, 2nd, and 3rd}
 
 \item{picks}{character vector containing the better's picks for 1st, 2nd, 
 and 3rd place, in that order}

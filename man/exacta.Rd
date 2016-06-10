@@ -9,11 +9,11 @@ exacta(race_df, picks)
 \arguments{
 \item{race_df, }{a data frame containing each horse's name and odds of winning 1st}
 
-\item{picks}{character vector containing the better's picks for 1st, 2nd, 
-picks in that order}
+\item{picks}{character vector containing the picks, by horse name, to come in 1st and 2nd
+in that order.}
 }
 \value{
-our calculation of probability
+The probability of the exacta bet being successful.
 }
 \description{
 Calculates the probability of an exacta bet being successful

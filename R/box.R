@@ -6,13 +6,11 @@
 #' @examples
 #' box(Kentucky_derby, c('Nyquist','Exaggerator'))
 #' box(race, my_picks)
-#' box(race, c('Nyquist', 'Exagerator','Big Brown'))
 #' @export
 box <- function(race_df, picks){
   if (length(picks) == 2){
     odds <- exacta(race_df, picks) + exacta(race_df, c(picks[2],picks[1]))
   }
-  
   else if (length(picks) == 3){
     option1 <- c(picks[1], picks[2], picks[3])
     option2 <- c(picks[1], picks[3], picks[2])
